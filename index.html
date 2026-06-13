@@ -3,59 +3,301 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>L'Avvocato delle Soluzioni - Stefano Di Santo</title>
+
+<title>L'Avvocato delle Soluzioni | Studio Legale Stefano Di Santo Roma</title>
+
+<meta name="description" content="Studio Legale Stefano Di Santo a Roma, Via di Novella 22. Avvocato civilista per diritto di famiglia, separazioni, divorzi, diritto condominiale, contratti, recupero crediti e controversie commerciali.">
+<meta name="keywords" content="avvocato Roma, avvocato civilista Roma, Stefano Di Santo, Avvocato delle Soluzioni, separazioni Roma, divorzi Roma, avvocato condominiale Roma, recupero crediti Roma">
+<meta name="robots" content="index, follow">
+
 <style>
-body{font-family:Arial,sans-serif;margin:0;line-height:1.6;color:#333}
-.hero{background:#1f2937;color:white;padding:80px 20px;text-align:center}
-.section{max-width:1100px;margin:auto;padding:60px 20px}
-h1,h2,h3{margin-top:0}
-.btn{display:inline-block;background:#c9a227;color:white;padding:14px 24px;text-decoration:none;border-radius:6px;margin:5px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{border:1px solid #ddd;padding:20px;border-radius:8px}
-footer{background:#f5f5f5;padding:30px;text-align:center}
+:root{
+  --navy:#071827;
+  --navy2:#102c43;
+  --gold:#c89b3c;
+  --gold2:#e2bd68;
+  --cream:#f6f1e8;
+  --paper:#fffaf2;
+  --ink:#17202b;
+  --muted:#667382;
+  --line:#eadfce;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+a{color:inherit}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,24,39,.95);color:white;border-bottom:1px solid rgba(255,255,255,.1)}
+nav{min-height:76px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.mark{width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-family:Georgia,serif;font-size:22px}
+.logo strong{display:block;text-transform:uppercase;font-size:14px;letter-spacing:.08em}
+.logo span{display:block;color:#cbd5df;font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.menu{display:flex;gap:20px;font-size:14px}
+.menu a{text-decoration:none;color:#dbe4ed}
+.menu a:hover{color:var(--gold2)}
+.hero{background:radial-gradient(circle at 75% 20%,rgba(200,155,60,.25),transparent 30%),linear-gradient(135deg,var(--navy),var(--navy2));color:white}
+.hero-grid{min-height:700px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:80px 0}
+.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:.18em;font-size:13px;font-weight:bold;margin-bottom:18px}
+h1{font-family:Georgia,serif;font-size:clamp(48px,7vw,92px);line-height:1.02;font-weight:500;margin:0 0 24px}
+h1 em{font-style:normal;color:var(--gold2)}
+.lead{font-size:clamp(20px,2vw,26px);color:#eef4f8;margin:0 0 16px}
+.sublead{color:#c9d4de;font-size:17px;max-width:650px;margin:0 0 34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:bold;margin:5px}
+.primary{background:var(--gold);color:#071827}
+.secondary{border:1px solid rgba(255,255,255,.3);color:white}
+.hero-card{min-height:520px;border-radius:34px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.14);box-shadow:0 24px 70px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;text-align:center;padding:40px}
+.hero-card div{border:1px solid rgba(224,189,106,.55);border-radius:50%;width:210px;height:210px;display:grid;place-items:center;font-family:Georgia,serif;font-size:82px;color:var(--gold2)}
+.trust{background:white;border-bottom:1px solid var(--line)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-grid div{padding:24px;border-left:1px solid #eee2d0}
+.trust-grid div:first-child{border-left:0}
+.trust strong{display:block;color:var(--navy);font-size:18px}
+.trust span{font-size:14px;color:var(--muted)}
+section{padding:86px 0}
+.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-weight:bold;font-size:13px;margin-bottom:12px}
+h2{font-family:Georgia,serif;font-size:clamp(34px,4vw,56px);line-height:1.12;font-weight:500;color:var(--navy);margin:0 0 18px}
+.section-head{max-width:820px;margin-bottom:44px}
+.section-head p{font-size:18px;color:var(--muted);margin:0}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.quote{background:white;border:1px solid var(--line);border-radius:34px;padding:42px;box-shadow:0 24px 70px rgba(7,24,39,.14)}
+blockquote{margin:0;font-family:Georgia,serif;font-size:32px;line-height:1.25;color:var(--navy)}
+.quote p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:32px;box-shadow:0 16px 44px rgba(7,24,39,.06)}
+.card h3{font-family:Georgia,serif;color:var(--navy);font-size:25px;font-weight:500;margin:0 0 14px}
+.card p{color:var(--muted)}
+.card ul{padding-left:18px}
+.dark{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white}
+.dark h2{color:white}
+.dark .section-head p{color:#c9d4de}
+.method{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:item}
+.step{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.045);border-radius:24px;padding:30px}
+.step:before{counter-increment:item;content:"0" counter(item);display:block;color:var(--gold2);letter-spacing:.16em;font-weight:bold;margin-bottom:20px}
+.step h3{color:white;margin:0 0 10px}
+.step p{color:#c9d4de;margin:0;font-size:15px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.box{background:white;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 14px 36px rgba(7,24,39,.05)}
+.box strong{display:block;color:var(--navy);font-size:20px;margin-bottom:8px}
+.box p{color:var(--muted);margin:0}
+.stars{color:var(--gold);letter-spacing:.08em;margin-bottom:12px}
+.map-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
+iframe{width:100%;height:420px;border:0;border-radius:28px}
+details{background:white;border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin-bottom:14px}
+summary{cursor:pointer;font-weight:bold;color:var(--navy)}
+details p{color:var(--muted)}
+.contact{background:linear-gradient(135deg,var(--navy),var(--navy2));color:white}
+.contact h2{color:white}
+.contact p{color:#dbe4ed}
+.contact-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:30px;padding:32px}
+.contact-line{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.contact-line strong{display:block;color:var(--gold2)}
+footer{background:#06121d;color:#aab7c3;padding:30px 0;font-size:14px}
+.mobile{display:none;position:fixed;bottom:12px;left:12px;right:12px;z-index:20;gap:10px}
+.mobile a{flex:1;text-align:center;padding:13px;border-radius:999px;text-decoration:none;font-weight:bold;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.mobile .call{background:white;color:var(--navy)}
+.mobile .wa{background:var(--gold);color:var(--navy)}
+@media(max-width:900px){
+.menu{display:none}
+.hero-grid,.split,.map-grid{grid-template-columns:1fr}
+.cards,.method,.grid2,.trust-grid{grid-template-columns:1fr}
+.hero-grid{min-height:auto;padding:50px 0}
+.hero-card{min-height:340px;order:-1}
+section{padding:64px 0}
+.mobile{display:flex}
+body{padding-bottom:72px}
+}
 </style>
 </head>
+
 <body>
+
+<header>
+<nav class="wrap">
+<a class="logo" href="#top">
+<div class="mark">SD</div>
+<div>
+<strong>Studio Legale Stefano Di Santo</strong>
+<span>L'Avvocato delle Soluzioni</span>
+</div>
+</a>
+<div class="menu">
+<a href="#approccio">Approccio</a>
+<a href="#aree">Aree</a>
+<a href="#autorevolezza">Autorevolezza</a>
+<a href="#recensioni">Recensioni</a>
+<a href="#mappa">Dove siamo</a>
+<a href="#faq">FAQ</a>
+<a href="https://wa.me/393209323127">WhatsApp</a>
+</div>
+</nav>
+</header>
+
+<main id="top">
+
 <section class="hero">
-<h1>L'Avvocato delle Soluzioni</h1>
-<p>Prima delle sentenze esistono le persone.</p>
-<p>Consulenza legale orientata alla soluzione, alla mediazione e alla tutela concreta dei tuoi interessi.</p>
-<a href="#contatti" class="btn">Prenota una consulenza</a>
-</section>
-
-<section class="section">
-<h2>Un approccio diverso</h2>
-<p>Mediare quando conviene. Difendere quando serve. Ogni strategia nasce dall'ascolto della persona e dall'analisi del problema.</p>
-</section>
-
-<section class="section">
-<h2>Aree di attività</h2>
-<div class="cards">
-<div class="card"><h3>Diritto di Famiglia</h3><p>Separazioni, divorzi, tutela dei figli e gestione dei conflitti familiari.</p></div>
-<div class="card"><h3>Attività Economiche</h3><p>Contratti, rapporti tra soci, recupero crediti e controversie commerciali.</p></div>
-<div class="card"><h3>Diritto Condominiale</h3><p>Mediazione, contestazioni, impugnazioni e rapporti con amministratori.</p></div>
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">Avvocato civilista a Roma · Via di Novella 22</div>
+<h1>L'Avvocato <em>delle Soluzioni</em></h1>
+<p class="lead">Prima delle sentenze esistono le persone.</p>
+<p class="sublead">Consulenza legale civile per separazioni, divorzi, controversie familiari, rapporti economici, contratti, recupero crediti e diritto condominiale. Un approccio fondato su ascolto, mediazione, strategia e tutela concreta.</p>
+<a class="btn primary" href="https://wa.me/393209323127">Richiedi un colloquio</a>
+<a class="btn secondary" href="tel:+393209323127">Chiama +39 320 932 3127</a>
+</div>
+<div class="hero-card"><div>SD</div></div>
 </div>
 </section>
 
-<section class="section">
-<h2>Il Metodo delle Soluzioni</h2>
-<ol>
-<li>Ascolto</li>
-<li>Analisi</li>
-<li>Strategia</li>
-<li>Soluzione</li>
-</ol>
+<div class="trust">
+<div class="wrap trust-grid">
+<div><strong>Ascolto reale</strong><span>La situazione viene compresa prima di scegliere la strategia.</span></div>
+<div><strong>Mediazione</strong><span>Riduzione del conflitto quando un accordo tutela meglio.</span></div>
+<div><strong>Strategia</strong><span>Scenari concreti, rischi chiari, percorso sostenibile.</span></div>
+<div><strong>Tutela</strong><span>Fermezza quando la difesa giudiziale diventa necessaria.</span></div>
+</div>
+</div>
+
+<section id="approccio">
+<div class="wrap split">
+<div class="quote">
+<blockquote>Mediare quando conviene. Difendere quando serve.</blockquote>
+<p>Un avvocato orientato alle soluzioni non alimenta lo scontro per abitudine. Valuta prima la strada più utile per proteggere interessi, relazioni, tempi e risorse.</p>
+</div>
+<div>
+<div class="kicker">Approccio</div>
+<h2>Un modo diverso di intendere la tutela legale.</h2>
+<p>Ogni controversia civile è anche una questione di relazioni: con un coniuge, un socio, un debitore, un amministratore, un vicino, una famiglia.</p>
+<p>Il lavoro legale deve aiutare il cliente a vedere con chiarezza quale soluzione è davvero più utile: accordo, negoziazione, mediazione, diffida o azione giudiziale.</p>
+</div>
+</div>
 </section>
 
-<section class="section" id="contatti">
-<h2>Stefano Di Santo</h2>
-<p>Avvocato civilista orientato alla ricerca di soluzioni efficaci, sostenibili e concrete.</p>
-<p><strong>Contatti da inserire</strong></p>
-<a href="#" class="btn">Richiedi appuntamento</a>
+<section id="aree">
+<div class="wrap">
+<div class="section-head">
+<div class="kicker">Aree di attività</div>
+<h2>Consulenza e tutela nei momenti in cui serve chiarezza.</h2>
+<p>Tre ambiti civili nei quali ascolto, mediazione e rigore giuridico possono incidere in modo concreto.</p>
+</div>
+<div class="cards">
+<div class="card"><h3>Diritto di famiglia</h3><p>Assistenza nelle situazioni familiari delicate.</p><ul><li>Separazioni e divorzi</li><li>Accordi consensuali</li><li>Tutela dei figli</li><li>Conflitti familiari</li></ul></div>
+<div class="card"><h3>Imprese e attività economiche</h3><p>Supporto legale nei rapporti professionali, commerciali e societari.</p><ul><li>Contratti</li><li>Rapporti tra soci</li><li>Recupero crediti</li><li>Controversie commerciali</li></ul></div>
+<div class="card"><h3>Diritto condominiale</h3><p>Mediazione e tutela nelle controversie condominiali.</p><ul><li>Contestazioni</li><li>Impugnazioni</li><li>Rapporti con amministratori</li><li>Ripartizione spese</li></ul></div>
+</div>
+</div>
 </section>
+
+<section class="dark">
+<div class="wrap">
+<div class="section-head">
+<div class="kicker">Metodo</div>
+<h2>Dal problema alla strategia.</h2>
+<p>Ogni incarico viene affrontato con un percorso ordinato, comprensibile e orientato alla decisione.</p>
+</div>
+<div class="method">
+<div class="step"><h3>Ascolto</h3><p>Comprendere il contesto, le persone coinvolte e ciò che il cliente vuole proteggere.</p></div>
+<div class="step"><h3>Analisi</h3><p>Valutare documenti, rischi, punti di forza e criticità.</p></div>
+<div class="step"><h3>Strategia</h3><p>Definire il percorso più utile: accordo, diffida, mediazione o giudizio.</p></div>
+<div class="step"><h3>Soluzione</h3><p>Cercare l'esito più sostenibile, tutelando diritti, tempi e costi.</p></div>
+</div>
+</div>
+</section>
+
+<section id="autorevolezza">
+<div class="wrap">
+<div class="section-head">
+<div class="kicker">Autorevolezza</div>
+<h2>La fiducia nasce da metodo, chiarezza e responsabilità.</h2>
+</div>
+<div class="grid2">
+<div class="box"><strong>Chiarezza del mandato</strong><p>Obiettivi comprensibili, documenti verificabili e linea d'azione coerente.</p></div>
+<div class="box"><strong>Visione preventiva</strong><p>Contratti, accordi e diffide possono prevenire contenziosi lunghi e costosi.</p></div>
+<div class="box"><strong>Riservatezza e misura</strong><p>La comunicazione è parte della strategia, soprattutto nei conflitti sensibili.</p></div>
+<div class="box"><strong>Linguaggio comprensibile</strong><p>Il cliente deve essere messo nelle condizioni di decidere con lucidità.</p></div>
+</div>
+</div>
+</section>
+
+<section id="recensioni">
+<div class="wrap">
+<div class="section-head">
+<div class="kicker">Recensioni</div>
+<h2>Cosa apprezzano i clienti in un percorso legale ben condotto.</h2>
+<p>Le testimonianze personali saranno inserite solo se reali, autorizzate e compatibili con riservatezza e correttezza professionale.</p>
+</div>
+<div class="grid2">
+<div class="box"><div class="stars">★★★★★</div><strong>Chiarezza strategica</strong><p>Comprendere alternative, tempi e rischi prima di decidere.</p></div>
+<div class="box"><div class="stars">★★★★★</div><strong>Ascolto e misura</strong><p>Attenzione alla persona e ai rapporti delicati.</p></div>
+<div class="box"><div class="stars">★★★★★</div><strong>Soluzioni concrete</strong><p>Accordo quando possibile, tutela ferma quando necessario.</p></div>
+<div class="box"><div class="stars">★★★★★</div><strong>Riservatezza</strong><p>Gestione sobria anche nelle controversie più sensibili.</p></div>
+</div>
+</div>
+</section>
+
+<section id="mappa">
+<div class="wrap">
+<div class="section-head">
+<div class="kicker">Dove siamo</div>
+<h2>Studio Legale Stefano Di Santo a Roma.</h2>
+<p>Ricevimento su appuntamento presso lo studio in Via di Novella 22, Roma.</p>
+</div>
+<div class="map-grid">
+<div class="box">
+<strong>Studio Legale Stefano Di Santo</strong>
+<p><b>Indirizzo:</b><br>Via di Novella 22, Roma</p>
+<p><b>Telefono e WhatsApp:</b><br><a href="tel:+393209323127">+39 320 932 3127</a></p>
+<p><b>Email:</b><br><a href="mailto:avvstefanodisanto@gmail.com">avvstefanodisanto@gmail.com</a></p>
+<a class="btn primary" href="https://wa.me/393209323127">Prenota su WhatsApp</a>
+</div>
+<iframe title="Mappa Studio Legale Stefano Di Santo" loading="lazy" src="https://www.google.com/maps?q=Via%20di%20Novella%2022%2C%20Roma&output=embed"></iframe>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="wrap">
+<div class="section-head">
+<div class="kicker">FAQ SEO</div>
+<h2>Domande frequenti su consulenza legale civile a Roma.</h2>
+</div>
+<details><summary>Quando conviene rivolgersi a un avvocato civilista a Roma?</summary><p>Conviene farlo appena una questione familiare, economica, contrattuale o condominiale inizia a produrre effetti concreti.</p></details>
+<details><summary>È sempre necessario iniziare una causa?</summary><p>No. Prima si valutano accordo, negoziazione, mediazione, diffida e altre soluzioni praticabili.</p></details>
+<details><summary>Lo Studio assiste in separazioni e divorzi?</summary><p>Sì. Lo studio assiste in separazioni, divorzi, accordi consensuali, tutela dei figli e conflitti familiari.</p></details>
+<details><summary>Lo studio si occupa di diritto condominiale?</summary><p>Sì. Segue controversie condominiali, contestazioni, impugnazioni, amministratori e ripartizione spese.</p></details>
+<details><summary>Come si prenota un primo colloquio?</summary><p>È possibile telefonare o scrivere su WhatsApp al +39 320 932 3127 oppure inviare una email.</p></details>
+</div>
+</section>
+
+<section class="contact">
+<div class="wrap split">
+<div>
+<div class="kicker">Contatti</div>
+<h2>Hai una questione legale da chiarire?</h2>
+<p>Prima che una controversia diventi più grande, può essere utile parlarne con ordine.</p>
+<a class="btn primary" href="https://wa.me/393209323127">Scrivi su WhatsApp</a>
+<a class="btn secondary" href="mailto:avvstefanodisanto@gmail.com">Invia una email</a>
+</div>
+<div class="contact-card">
+<div class="contact-line"><strong>Studio</strong>Via di Novella 22, Roma</div>
+<div class="contact-line"><strong>Telefono</strong><a href="tel:+393209323127">+39 320 932 3127</a></div>
+<div class="contact-line"><strong>WhatsApp</strong><a href="https://wa.me/393209323127">Richiedi un colloquio</a></div>
+<div class="contact-line"><strong>Email</strong><a href="mailto:avvstefanodisanto@gmail.com">avvstefanodisanto@gmail.com</a></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<div class="mobile">
+<a class="call" href="tel:+393209323127">Chiama</a>
+<a class="wa" href="https://wa.me/393209323127">WhatsApp</a>
+</div>
 
 <footer>
-<p>© Stefano Di Santo - L'Avvocato delle Soluzioni</p>
+<div class="wrap">
+© Studio Legale Stefano Di Santo · L'Avvocato delle Soluzioni · Via di Novella 22, Roma
+</div>
 </footer>
+
 </body>
 </html>
